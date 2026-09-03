@@ -1,0 +1,2252 @@
+[
+  {
+    "barcode": "8901262010053",
+    "name": "Amul Taaza Homogenised Toned Milk 500ml",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 28.0,
+    "shelf_life_days": 10
+  },
+  {
+    "barcode": "8901262010084",
+    "name": "Amul Gold Pasteurised Full Cream Milk 1L",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 68.0,
+    "shelf_life_days": 4
+  },
+  {
+    "barcode": "8901058852331",
+    "name": "Nandini Pasteurized Toned Milk 500ml",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 24.0,
+    "shelf_life_days": 3
+  },
+  {
+    "barcode": "8901058852447",
+    "name": "Nandini GoodLife Long Life UHT Milk 500ml",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 32.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262010015",
+    "name": "Amul Pure Salted Butter 100g",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 56.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262020014",
+    "name": "Amul Processed Cheese Slices 200g (10 Slices)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 145.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901063012010",
+    "name": "Britannia Cheese Block 200g",
+    "brand": "Britannia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 135.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262040050",
+    "name": "Amul Masti Dahi Cup 400g",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 35.0,
+    "shelf_life_days": 15
+  },
+  {
+    "barcode": "8906079930018",
+    "name": "Epigamia Greek Yogurt Natural 90g",
+    "brand": "Epigamia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 50.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8906079930025",
+    "name": "Epigamia Greek Yogurt Wild Blueberry 90g",
+    "brand": "Epigamia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 55.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901030012001",
+    "name": "Nestle Everyday Dairy Whitener 400g Pouch",
+    "brand": "Nestle",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 240.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030013008",
+    "name": "Nestle Milkmaid Sweetened Condensed Milk 380g",
+    "brand": "Nestle",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 144.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8906014411015",
+    "name": "Country Delight Pure Cow Milk 1L Bottle",
+    "brand": "Country Delight",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 76.0,
+    "shelf_life_days": 4
+  },
+  {
+    "barcode": "8906059280016",
+    "name": "English Oven Whole Wheat Brown Bread 400g",
+    "brand": "English Oven",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 45.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8901063142014",
+    "name": "Britannia 100% Whole Wheat Bread 400g",
+    "brand": "Britannia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 48.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8906087520010",
+    "name": "Eggoz Farm Fresh White Eggs (Pack of 6)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 60.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8906087520027",
+    "name": "Eggoz Farm Fresh Brown Eggs (Pack of 6)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 75.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901030789019",
+    "name": "Kellogg's Corn Flakes Original 875g",
+    "brand": "Kellogg's",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 340.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030789026",
+    "name": "Kellogg's Chocos Moons & Stars 375g",
+    "brand": "Kellogg's",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 185.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901499009825",
+    "name": "Quaker Rolled Oats 1kg Pouch",
+    "brand": "Quaker",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 199.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901764012297",
+    "name": "Coca-Cola Original Taste Carbonated Beverage 750ml",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901764022296",
+    "name": "Thums Up Charged Carbonated Drink 750ml",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901764032295",
+    "name": "Sprite Lime Flavored Sparkling Drink 750ml",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901764042294",
+    "name": "Fanta Orange Sparkling Drink 750ml",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901499010111",
+    "name": "Pepsi Regular Cola 750ml Bottle",
+    "brand": "PepsiCo",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "9002490100070",
+    "name": "Red Bull Energy Drink 250ml Can",
+    "brand": "Red Bull",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 125.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906059281013",
+    "name": "Raw Pressery Valencia Orange Cold Pressed Juice 200ml",
+    "brand": "Raw Pressery",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 60.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8906059281020",
+    "name": "Raw Pressery Tender Coconut Water 200ml",
+    "brand": "Raw Pressery",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 50.0,
+    "shelf_life_days": 30
+  },
+  {
+    "barcode": "8906048100018",
+    "name": "Paper Boat Tender Coconut Water 200ml",
+    "brand": "Paper Boat",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 50.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8906048100025",
+    "name": "Paper Boat Aamras Mango Drink 250ml",
+    "brand": "Paper Boat",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 35.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030005010",
+    "name": "Nescafe Classic Instant Coffee Jar 50g",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 185.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030005027",
+    "name": "Nescafe Sunrise Instant Coffee Chicory 100g Pouch",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 130.0,
+    "shelf_life_days": 540
+  },
+  {
+    "barcode": "8901052002015",
+    "name": "Tata Tea Gold Leaf Tea 500g Pouch",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 310.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052002022",
+    "name": "Tata Tea Premium Desh Ki Chai 500g",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 260.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901262170016",
+    "name": "Amul Kool Cafe Flavoured Milk Can 200ml",
+    "brand": "Amul",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 35.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030890012",
+    "name": "Real Fruit Power Mixed Fruit Juice 1L",
+    "brand": "Dabur",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 120.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030890029",
+    "name": "Real Fruit Power Alphonso Mango Juice 1L",
+    "brand": "Dabur",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 120.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901499010227",
+    "name": "Tropicana 100% Orange Juice 1L",
+    "brand": "Tropicana",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 140.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058001012",
+    "name": "Bisleri Packaged Mineral Drinking Water 1L",
+    "brand": "Bisleri",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058001029",
+    "name": "Kinley Packaged Drinking Water 1L",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058859019",
+    "name": "Maggi 2-Minute Masala Instant Noodles 70g",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 14.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901058859026",
+    "name": "Maggi 2-Minute Special Masala Noodles 70g",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901499011019",
+    "name": "Lay's India's Magic Masala Potato Chips 50g",
+    "brand": "Lay's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8901499011026",
+    "name": "Lay's American Style Cream & Onion Chips 50g",
+    "brand": "Lay's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8901499011033",
+    "name": "Lay's Spanish Tomato Tango Potato Chips 50g",
+    "brand": "Lay's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8901499012016",
+    "name": "Kurkure Masala Munch Crisps 85g",
+    "brand": "Kurkure",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8901499012023",
+    "name": "Kurkure Green Chutney Style Crisps 85g",
+    "brand": "Kurkure",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 20.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8901499013013",
+    "name": "Doritos Cheese Supreme Nacho Chips 60g",
+    "brand": "Doritos",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 30.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901499013020",
+    "name": "Doritos Sweet Chilli Flavour Nachos 60g",
+    "brand": "Doritos",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 30.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8904004400010",
+    "name": "Haldiram's Nagpur Aloo Bhujia 200g Pouch",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 58.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8904004400027",
+    "name": "Haldiram's Bhujia Sev 200g",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 55.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8904004400034",
+    "name": "Haldiram's Khatta Meetha Mixture 200g",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 55.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901233024018",
+    "name": "Cadbury Dairy Milk Chocolate Bar 52g",
+    "brand": "Cadbury (Mondelez)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 45.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901233024025",
+    "name": "Cadbury Dairy Milk Silk Chocolate 60g",
+    "brand": "Cadbury (Mondelez)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 80.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030018010",
+    "name": "Nestle KitKat 4 Finger Chocolate Bar 38g",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 30.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901063001014",
+    "name": "Parle-G Original Glucose Biscuits 800g Value Pack",
+    "brand": "Parle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 85.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901063002011",
+    "name": "Britannia Good Day Butter Cookies 200g",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 45.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901063003018",
+    "name": "Britannia Bourbon Chocolate Cream Biscuits 150g",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 35.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901725112011",
+    "name": "Sunfeast Dark Fantasy Choco Fills Biscuits 300g",
+    "brand": "ITC Sunfeast",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 120.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901030020013",
+    "name": "Kissan Fresh Tomato Ketchup 950g Squeeze Pouch",
+    "brand": "Kissan (HUL)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 130.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901595850017",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 85.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901725131012",
+    "name": "Aashirvaad Superior MP Shudh Chakki Atta 5kg",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 245.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8901725131029",
+    "name": "Aashirvaad Select 100% Sharbati Wheat Atta 5kg",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 315.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8906007280017",
+    "name": "Fortune Sunlite Refined Sunflower Oil 1L Pouch",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 135.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906007280024",
+    "name": "Fortune Kachi Ghani Mustard Oil 1L Bottle",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 155.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901088001011",
+    "name": "Saffola Gold Pro Healthy Lifestyle Edible Oil 1L",
+    "brand": "Saffola (Marico)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 165.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901052001018",
+    "name": "Tata Salt Vacuum Evaporated Iodized Salt 1kg",
+    "brand": "Tata Salt",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 28.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901052001025",
+    "name": "Tata Salt Lite Low Sodium Iodized Salt 1kg",
+    "brand": "Tata Salt",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 48.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901262070019",
+    "name": "Amul Pure Ghee 1L Tin",
+    "brand": "Amul",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 630.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901058853017",
+    "name": "Nandini Pure Cow Ghee 500ml Pouch",
+    "brand": "Nandini (KMF)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 310.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901391001014",
+    "name": "India Gate Super Basmati Rice 1kg Pouch",
+    "brand": "India Gate (KRBL)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 175.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901391001021",
+    "name": "India Gate Feast Rozzana Basmati Rice 5kg Bag",
+    "brand": "India Gate (KRBL)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 499.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901052003012",
+    "name": "Tata Sampann Unpolished Toor Dal 1kg",
+    "brand": "Tata Sampann",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 185.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052003029",
+    "name": "Tata Sampann Unpolished Moong Dal 1kg",
+    "brand": "Tata Sampann",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 165.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052003036",
+    "name": "Tata Sampann Unpolished Chana Dal 1kg",
+    "brand": "Tata Sampann",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 125.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8906014412012",
+    "name": "Madhur Pure & Hygienic Refined Sugar 1kg",
+    "brand": "Madhur (Renuka Sugars)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 54.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901088011010",
+    "name": "MDH Deggi Mirch Red Chilli Powder 100g",
+    "brand": "MDH",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 88.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901088011027",
+    "name": "MDH Garam Masala Powder 100g Box",
+    "brand": "MDH",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 95.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901088011034",
+    "name": "Everest Turmeric Powder (Haldi) 100g Box",
+    "brand": "Everest",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 38.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901088011041",
+    "name": "Catch Coriander Powder (Dhaniya) 100g",
+    "brand": "Catch (DS Group)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 42.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901396011018",
+    "name": "Dettol Original Liquid Handwash Refill 675ml",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396011025",
+    "name": "Dettol Antiseptic Disinfectant Liquid 550ml",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 215.0,
+    "shelf_life_days": 1095
+  },
+  {
+    "barcode": "8901030031019",
+    "name": "Vim Lemon Dishwash Gel 500ml Bottle",
+    "brand": "Vim (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 110.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030031026",
+    "name": "Surf Excel Matic Top Load Liquid Detergent 1L",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 220.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030031033",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 140.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901314010017",
+    "name": "Colgate Total Antibacterial Fluoride Toothpaste 150g",
+    "brand": "Colgate",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 125.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901314010024",
+    "name": "Colgate Strong Teeth Anticavity Toothpaste 200g",
+    "brand": "Colgate",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 110.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030041018",
+    "name": "Head & Shoulders Cool Menthol Anti-Dandruff Shampoo 180ml",
+    "brand": "Head & Shoulders (P&G)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 175.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030041025",
+    "name": "Dove Daily Shine Shampoo 180ml",
+    "brand": "Dove (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 160.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396021017",
+    "name": "Harpic Power Plus Disinfectant Toilet Cleaner 500ml",
+    "brand": "Harpic (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 95.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396021024",
+    "name": "Lizol Disinfectant Surface Cleaner Citrus 500ml",
+    "brand": "Lizol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 105.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906014413019",
+    "name": "Goodknight Gold Flash Mosquito Repellent Refill 45ml",
+    "brand": "Goodknight (Godrej)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 85.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901725141011",
+    "name": "Savlon Moisture Shield Germ Protection Soap (Pack of 4)",
+    "brand": "Savlon (ITC)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 135.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030051017",
+    "name": "Comfort After Wash Morning Fresh Fabric Conditioner 860ml",
+    "brand": "Comfort (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 215.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906059200951",
+    "name": "English Oven Whole Wheat Brown Bread 400g (Twin Pack)",
+    "brand": "English Oven",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 63.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8901030000961",
+    "name": "Nestle KitKat 4 Finger Chocolate Bar 38g (Family Pack)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 24.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901314000971",
+    "name": "Colgate Total Antibacterial Fluoride Toothpaste 150g (1kg Economy Jar)",
+    "brand": "Colgate",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 275.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901262000981",
+    "name": "Amul Masti Dahi Cup 400g (Special Edition 20% Extra)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 77.0,
+    "shelf_life_days": 15
+  },
+  {
+    "barcode": "8901058800991",
+    "name": "Nandini GoodLife Long Life UHT Milk 500ml (Twin Pack)",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 25.6,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901499001001",
+    "name": "Tropicana 100% Orange Juice 1L (1kg Economy Jar)",
+    "brand": "Tropicana",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 196.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8906048101011",
+    "name": "Paper Boat Aamras Mango Drink 250ml (Pack of 2)",
+    "brand": "Paper Boat",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 63.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001021",
+    "name": "Dove Daily Shine Shampoo 180ml (1kg Economy Jar)",
+    "brand": "Dove (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 224.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901058801031",
+    "name": "Nandini Pasteurized Toned Milk 500ml (Pack of 2)",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 19.2,
+    "shelf_life_days": 3
+  },
+  {
+    "barcode": "8901499001041",
+    "name": "Quaker Rolled Oats 1kg Pouch (Special Edition 20% Extra)",
+    "brand": "Quaker",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 358.2,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901262101051",
+    "name": "Amul Kool Cafe Flavoured Milk Can 200ml (Family Pack)",
+    "brand": "Amul",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 49.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901764001061",
+    "name": "Coca-Cola Original Taste Carbonated Beverage 750ml (Special Edition 20% Extra)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 56.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8904004401071",
+    "name": "Haldiram's Bhujia Sev 200g (500g Value Pouch)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 44.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262001081",
+    "name": "Amul Masti Dahi Cup 400g (1kg Economy Jar)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 28.0,
+    "shelf_life_days": 15
+  },
+  {
+    "barcode": "8901396001091",
+    "name": "Lizol Disinfectant Surface Cleaner Citrus 500ml (500g Value Pouch)",
+    "brand": "Lizol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 147.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901725101101",
+    "name": "Sunfeast Dark Fantasy Choco Fills Biscuits 300g (500g Value Pouch)",
+    "brand": "ITC Sunfeast",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 216.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906059201111",
+    "name": "English Oven Whole Wheat Brown Bread 400g (Pack of 2)",
+    "brand": "English Oven",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 81.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8901391001121",
+    "name": "India Gate Feast Rozzana Basmati Rice 5kg Bag (Special Edition 20% Extra)",
+    "brand": "India Gate (KRBL)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 1097.8,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901499001131",
+    "name": "Doritos Cheese Supreme Nacho Chips 60g (Pack of 2)",
+    "brand": "Doritos",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 66.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058801141",
+    "name": "Nandini Pasteurized Toned Milk 500ml (1kg Economy Jar)",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 33.6,
+    "shelf_life_days": 3
+  },
+  {
+    "barcode": "8901233001151",
+    "name": "Cadbury Dairy Milk Chocolate Bar 52g (Family Pack)",
+    "brand": "Cadbury (Mondelez)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052001161",
+    "name": "Tata Tea Premium Desh Ki Chai 500g (Twin Pack)",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 468.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030001171",
+    "name": "Kissan Fresh Tomato Ketchup 950g Squeeze Pouch (1kg Economy Jar)",
+    "brand": "Kissan (HUL)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 182.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901058001181",
+    "name": "Bisleri Packaged Mineral Drinking Water 1L (Special Edition 20% Extra)",
+    "brand": "Bisleri",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 44.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901396001191",
+    "name": "Harpic Power Plus Disinfectant Toilet Cleaner 500ml (Twin Pack)",
+    "brand": "Harpic (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 209.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030801201",
+    "name": "Real Fruit Power Mixed Fruit Juice 1L (1kg Economy Jar)",
+    "brand": "Dabur",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 168.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001211",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg (Twin Pack)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 196.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906087501221",
+    "name": "Eggoz Farm Fresh Brown Eggs (Special Edition 20% Extra)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 105.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901063001231",
+    "name": "Britannia Good Day Butter Cookies 200g (Family Pack)",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 63.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001241",
+    "name": "Surf Excel Matic Top Load Liquid Detergent 1L (Special Edition 20% Extra)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 176.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030001251",
+    "name": "Nestle KitKat 4 Finger Chocolate Bar 38g (Family Pack)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 66.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901262001261",
+    "name": "Amul Taaza Homogenised Toned Milk 500ml (500g Value Pouch)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 22.4,
+    "shelf_life_days": 10
+  },
+  {
+    "barcode": "8904004401271",
+    "name": "Haldiram's Khatta Meetha Mixture 200g (Pack of 2)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058001281",
+    "name": "Kinley Packaged Drinking Water 1L (500g Value Pouch)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 36.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901088001291",
+    "name": "Everest Turmeric Powder (Twin Pack)",
+    "brand": "Everest",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 30.4,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901058801301",
+    "name": "Nandini Pasteurized Toned Milk 500ml (Special Edition 20% Extra)",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 19.2,
+    "shelf_life_days": 3
+  },
+  {
+    "barcode": "8901052001311",
+    "name": "Tata Tea Premium Desh Ki Chai 500g (500g Value Pouch)",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 364.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052001321",
+    "name": "Tata Sampann Unpolished Moong Dal 1kg (1kg Economy Jar)",
+    "brand": "Tata Sampann",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 363.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8904004401331",
+    "name": "Haldiram's Khatta Meetha Mixture 200g (Special Edition 20% Extra)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901088001341",
+    "name": "Catch Coriander Powder (Pack of 2)",
+    "brand": "Catch (DS Group)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 92.4,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901396001351",
+    "name": "Dettol Antiseptic Disinfectant Liquid 550ml (500g Value Pouch)",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 172.0,
+    "shelf_life_days": 1095
+  },
+  {
+    "barcode": "8901030701361",
+    "name": "Kellogg's Chocos Moons & Stars 375g (Twin Pack)",
+    "brand": "Kellogg's",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 407.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030001371",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg (Twin Pack)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 308.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030001381",
+    "name": "Nescafe Classic Instant Coffee Jar 50g (Twin Pack)",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 407.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901058801391",
+    "name": "Maggi 2-Minute Masala Instant Noodles 70g (500g Value Pouch)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 25.2,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901396001401",
+    "name": "Lizol Disinfectant Surface Cleaner Citrus 500ml (1kg Economy Jar)",
+    "brand": "Lizol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 84.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901063001411",
+    "name": "Britannia Bourbon Chocolate Cream Biscuits 150g (Twin Pack)",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 49.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901088001421",
+    "name": "Catch Coriander Powder (Family Pack)",
+    "brand": "Catch (DS Group)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 92.4,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901396001431",
+    "name": "Dettol Antiseptic Disinfectant Liquid 550ml (1kg Economy Jar)",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 387.0,
+    "shelf_life_days": 1095
+  },
+  {
+    "barcode": "8901725101441",
+    "name": "Aashirvaad Superior MP Shudh Chakki Atta 5kg (Special Edition 20% Extra)",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 441.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8901030001451",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg (Twin Pack)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 308.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030801461",
+    "name": "Real Fruit Power Alphonso Mango Juice 1L (Twin Pack)",
+    "brand": "Dabur",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 216.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901725101471",
+    "name": "Sunfeast Dark Fantasy Choco Fills Biscuits 300g (1kg Economy Jar)",
+    "brand": "ITC Sunfeast",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 216.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901030001481",
+    "name": "Comfort After Wash Morning Fresh Fabric Conditioner 860ml (Special Edition 20% Extra)",
+    "brand": "Comfort (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 301.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906014401491",
+    "name": "Goodknight Gold Flash Mosquito Repellent Refill 45ml (Pack of 2)",
+    "brand": "Goodknight (Godrej)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 119.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396001501",
+    "name": "Harpic Power Plus Disinfectant Toilet Cleaner 500ml (500g Value Pouch)",
+    "brand": "Harpic (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 76.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901595801511",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar (1kg Economy Jar)",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 187.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901314001521",
+    "name": "Colgate Total Antibacterial Fluoride Toothpaste 150g (1kg Economy Jar)",
+    "brand": "Colgate",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 100.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906059201531",
+    "name": "English Oven Whole Wheat Brown Bread 400g (Twin Pack)",
+    "brand": "English Oven",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 81.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8906087501541",
+    "name": "Eggoz Farm Fresh White Eggs (Pack of 2)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 108.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901595801551",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar (1kg Economy Jar)",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 68.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901058801561",
+    "name": "Nandini Pure Cow Ghee 500ml Pouch (Family Pack)",
+    "brand": "Nandini (KMF)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 434.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901396001571",
+    "name": "Dettol Original Liquid Handwash Refill 675ml (1kg Economy Jar)",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 138.6,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030001581",
+    "name": "Dove Daily Shine Shampoo 180ml (Twin Pack)",
+    "brand": "Dove (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 352.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901262101591",
+    "name": "Amul Kool Cafe Flavoured Milk Can 200ml (Family Pack)",
+    "brand": "Amul",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 63.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058801601",
+    "name": "Maggi 2-Minute Masala Instant Noodles 70g (Twin Pack)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 30.8,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901063001611",
+    "name": "Parle-G Original Glucose Biscuits 800g Value Pack (Pack of 2)",
+    "brand": "Parle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 153.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058001621",
+    "name": "Bisleri Packaged Mineral Drinking Water 1L (Twin Pack)",
+    "brand": "Bisleri",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 36.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901063001631",
+    "name": "Britannia Good Day Butter Cookies 200g (500g Value Pouch)",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901725101641",
+    "name": "Aashirvaad Superior MP Shudh Chakki Atta 5kg (500g Value Pouch)",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 539.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8901499001651",
+    "name": "Quaker Rolled Oats 1kg Pouch (500g Value Pouch)",
+    "brand": "Quaker",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 437.8,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030001661",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg (Special Edition 20% Extra)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 252.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030001671",
+    "name": "Vim Lemon Dishwash Gel 500ml Bottle (1kg Economy Jar)",
+    "brand": "Vim (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 154.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901499001681",
+    "name": "Lay's American Style Cream & Onion Chips 50g (Family Pack)",
+    "brand": "Lay's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 28.0,
+    "shelf_life_days": 120
+  },
+  {
+    "barcode": "8906014401691",
+    "name": "Country Delight Pure Cow Milk 1L Bottle (Twin Pack)",
+    "brand": "Country Delight",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 136.8,
+    "shelf_life_days": 4
+  },
+  {
+    "barcode": "8901764001701",
+    "name": "Thums Up Charged Carbonated Drink 750ml (Special Edition 20% Extra)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 56.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901314001711",
+    "name": "Colgate Strong Teeth Anticavity Toothpaste 200g (Pack of 2)",
+    "brand": "Colgate",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 88.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396001721",
+    "name": "Lizol Disinfectant Surface Cleaner Citrus 500ml (Special Edition 20% Extra)",
+    "brand": "Lizol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 189.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901499001731",
+    "name": "Tropicana 100% Orange Juice 1L (Twin Pack)",
+    "brand": "Tropicana",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 252.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901088001741",
+    "name": "Catch Coriander Powder (Special Edition 20% Extra)",
+    "brand": "Catch (DS Group)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 33.6,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052001751",
+    "name": "Tata Tea Premium Desh Ki Chai 500g (Pack of 2)",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 208.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901030001761",
+    "name": "Comfort After Wash Morning Fresh Fabric Conditioner 860ml (Pack of 2)",
+    "brand": "Comfort (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 301.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030801771",
+    "name": "Real Fruit Power Mixed Fruit Juice 1L (1kg Economy Jar)",
+    "brand": "Dabur",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 96.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001781",
+    "name": "Dove Daily Shine Shampoo 180ml (Special Edition 20% Extra)",
+    "brand": "Dove (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 128.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901595801791",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar (1kg Economy Jar)",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 119.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901262001801",
+    "name": "Amul Pure Ghee 1L Tin (Special Edition 20% Extra)",
+    "brand": "Amul",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 882.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906048101811",
+    "name": "Paper Boat Tender Coconut Water 200ml (Family Pack)",
+    "brand": "Paper Boat",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 70.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262001821",
+    "name": "Amul Pure Salted Butter 100g (Special Edition 20% Extra)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 100.8,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8906048101831",
+    "name": "Paper Boat Tender Coconut Water 200ml (Pack of 2)",
+    "brand": "Paper Boat",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 40.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901725101841",
+    "name": "Aashirvaad Superior MP Shudh Chakki Atta 5kg (1kg Economy Jar)",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 441.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8901764001851",
+    "name": "Sprite Lime Flavored Sparkling Drink 750ml (Pack of 2)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 88.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001861",
+    "name": "Dove Daily Shine Shampoo 180ml (Twin Pack)",
+    "brand": "Dove (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 128.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906059201871",
+    "name": "English Oven Whole Wheat Brown Bread 400g (500g Value Pouch)",
+    "brand": "English Oven",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 63.0,
+    "shelf_life_days": 5
+  },
+  {
+    "barcode": "8901396001881",
+    "name": "Harpic Power Plus Disinfectant Toilet Cleaner 500ml (Special Edition 20% Extra)",
+    "brand": "Harpic (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 171.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901088001891",
+    "name": "Catch Coriander Powder (Pack of 2)",
+    "brand": "Catch (DS Group)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 33.6,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8906087501901",
+    "name": "Eggoz Farm Fresh White Eggs (Twin Pack)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 108.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901030001911",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg (Special Edition 20% Extra)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 196.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8904004401921",
+    "name": "Haldiram's Nagpur Aloo Bhujia 200g Pouch (500g Value Pouch)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 81.2,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058001931",
+    "name": "Bisleri Packaged Mineral Drinking Water 1L (1kg Economy Jar)",
+    "brand": "Bisleri",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 44.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8906007201941",
+    "name": "Fortune Sunlite Refined Sunflower Oil 1L Pouch (500g Value Pouch)",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 243.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "9002490101951",
+    "name": "Red Bull Energy Drink 250ml Can (Special Edition 20% Extra)",
+    "brand": "Red Bull",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 100.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901391001961",
+    "name": "India Gate Super Basmati Rice 1kg Pouch (Family Pack)",
+    "brand": "India Gate (KRBL)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 245.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901058801971",
+    "name": "Nandini GoodLife Long Life UHT Milk 500ml (Pack of 2)",
+    "brand": "Nandini (KMF)",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 70.4,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030001981",
+    "name": "Head & Shoulders Cool Menthol Anti-Dandruff Shampoo 180ml (500g Value Pouch)",
+    "brand": "Head & Shoulders (P&G)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 385.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901052001991",
+    "name": "Tata Tea Premium Desh Ki Chai 500g (500g Value Pouch)",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 208.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8904004402001",
+    "name": "Haldiram's Khatta Meetha Mixture 200g (Twin Pack)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 77.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058802011",
+    "name": "Maggi 2-Minute Masala Instant Noodles 70g (1kg Economy Jar)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 11.2,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901088002021",
+    "name": "Everest Turmeric Powder (500g Value Pouch)",
+    "brand": "Everest",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 53.2,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901052002031",
+    "name": "Tata Salt Vacuum Evaporated Iodized Salt 1kg (Pack of 2)",
+    "brand": "Tata Salt",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 61.6,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030002041",
+    "name": "Nescafe Sunrise Instant Coffee Chicory 100g Pouch (Pack of 2)",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 182.0,
+    "shelf_life_days": 540
+  },
+  {
+    "barcode": "9002490102051",
+    "name": "Red Bull Energy Drink 250ml Can (Twin Pack)",
+    "brand": "Red Bull",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 175.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901499002061",
+    "name": "Doritos Sweet Chilli Flavour Nachos 60g (Twin Pack)",
+    "brand": "Doritos",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 54.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030002071",
+    "name": "Nescafe Classic Instant Coffee Jar 50g (Family Pack)",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 148.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906014402081",
+    "name": "Goodknight Gold Flash Mosquito Repellent Refill 45ml (Pack of 2)",
+    "brand": "Goodknight (Godrej)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 187.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030002091",
+    "name": "Kissan Fresh Tomato Ketchup 950g Squeeze Pouch (Family Pack)",
+    "brand": "Kissan (HUL)",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 286.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906007202101",
+    "name": "Fortune Kachi Ghani Mustard Oil 1L Bottle (Twin Pack)",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 341.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8901063002111",
+    "name": "Britannia Cheese Block 200g (500g Value Pouch)",
+    "brand": "Britannia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 243.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901052002121",
+    "name": "Tata Tea Gold Leaf Tea 500g Pouch (Pack of 2)",
+    "brand": "Tata Tea",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 248.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901725102131",
+    "name": "Aashirvaad Superior MP Shudh Chakki Atta 5kg (Pack of 2)",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 441.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8901063002141",
+    "name": "Britannia Good Day Butter Cookies 200g (500g Value Pouch)",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 81.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8904004402151",
+    "name": "Haldiram's Bhujia Sev 200g (1kg Economy Jar)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 121.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901030002161",
+    "name": "Comfort After Wash Morning Fresh Fabric Conditioner 860ml (Special Edition 20% Extra)",
+    "brand": "Comfort (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 172.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901499002171",
+    "name": "Quaker Rolled Oats 1kg Pouch (Special Edition 20% Extra)",
+    "brand": "Quaker",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 437.8,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8906014402181",
+    "name": "Goodknight Gold Flash Mosquito Repellent Refill 45ml (Pack of 2)",
+    "brand": "Goodknight (Godrej)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 68.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901595802191",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar (1kg Economy Jar)",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 119.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8906059202201",
+    "name": "Raw Pressery Tender Coconut Water 200ml (1kg Economy Jar)",
+    "brand": "Raw Pressery",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 70.0,
+    "shelf_life_days": 30
+  },
+  {
+    "barcode": "8906087502211",
+    "name": "Eggoz Farm Fresh White Eggs (Family Pack)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 48.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901058002221",
+    "name": "Bisleri Packaged Mineral Drinking Water 1L (Family Pack)",
+    "brand": "Bisleri",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 36.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058802231",
+    "name": "Maggi 2-Minute Special Masala Noodles 70g (Pack of 2)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 16.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906014402241",
+    "name": "Madhur Pure & Hygienic Refined Sugar 1kg (1kg Economy Jar)",
+    "brand": "Madhur (Renuka Sugars)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 118.8,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901030002251",
+    "name": "Nescafe Sunrise Instant Coffee Chicory 100g Pouch (500g Value Pouch)",
+    "brand": "Nestle",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 104.0,
+    "shelf_life_days": 540
+  },
+  {
+    "barcode": "8901030002261",
+    "name": "Nestle Everyday Dairy Whitener 400g Pouch (500g Value Pouch)",
+    "brand": "Nestle",
+    "category": "Dairy & Breakfast",
+    "is_perishable": false,
+    "price": 192.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901725102271",
+    "name": "Aashirvaad Select 100% Sharbati Wheat Atta 5kg (1kg Economy Jar)",
+    "brand": "ITC Aashirvaad",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 567.0,
+    "shelf_life_days": 90
+  },
+  {
+    "barcode": "8906007202281",
+    "name": "Fortune Kachi Ghani Mustard Oil 1L Bottle (500g Value Pouch)",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 124.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "9002490102291",
+    "name": "Red Bull Energy Drink 250ml Can (Special Edition 20% Extra)",
+    "brand": "Red Bull",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 225.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901396002301",
+    "name": "Lizol Disinfectant Surface Cleaner Citrus 500ml (Pack of 2)",
+    "brand": "Lizol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 231.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906087502311",
+    "name": "Eggoz Farm Fresh Brown Eggs (Special Edition 20% Extra)",
+    "brand": "Eggoz",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 105.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901058002321",
+    "name": "Kinley Packaged Drinking Water 1L (1kg Economy Jar)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 16.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901595802331",
+    "name": "Ching's Secret Schezwan Chutney 250g Glass Jar (Pack of 2)",
+    "brand": "Ching's Secret",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 153.0,
+    "shelf_life_days": 365
+  },
+  {
+    "barcode": "8901499002341",
+    "name": "Tropicana 100% Orange Juice 1L (Special Edition 20% Extra)",
+    "brand": "Tropicana",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 252.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901499002351",
+    "name": "Pepsi Regular Cola 750ml Bottle (Pack of 2)",
+    "brand": "PepsiCo",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 72.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901063002361",
+    "name": "Parle-G Original Glucose Biscuits 800g Value Pack (Special Edition 20% Extra)",
+    "brand": "Parle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 68.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "9002490102371",
+    "name": "Red Bull Energy Drink 250ml Can (1kg Economy Jar)",
+    "brand": "Red Bull",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 175.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8906059202381",
+    "name": "Raw Pressery Valencia Orange Cold Pressed Juice 200ml (500g Value Pouch)",
+    "brand": "Raw Pressery",
+    "category": "Beverages",
+    "is_perishable": true,
+    "price": 108.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901030002391",
+    "name": "Surf Excel Matic Top Load Liquid Detergent 1L (Family Pack)",
+    "brand": "Surf Excel (HUL)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 308.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901725102401",
+    "name": "Savlon Moisture Shield Germ Protection Soap (500g Value Pouch)",
+    "brand": "Savlon (ITC)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 243.0,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901063002411",
+    "name": "Britannia Good Day Butter Cookies 200g (Family Pack)",
+    "brand": "Britannia",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 99.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8906007202421",
+    "name": "Fortune Kachi Ghani Mustard Oil 1L Bottle (1kg Economy Jar)",
+    "brand": "Fortune (Adani Wilmar)",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 217.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8906079902431",
+    "name": "Epigamia Greek Yogurt Natural 90g (Pack of 2)",
+    "brand": "Epigamia",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 110.0,
+    "shelf_life_days": 21
+  },
+  {
+    "barcode": "8901764002441",
+    "name": "Thums Up Charged Carbonated Drink 750ml (500g Value Pouch)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 72.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901058002451",
+    "name": "Kinley Packaged Drinking Water 1L (Pack of 2)",
+    "brand": "Coca-Cola",
+    "category": "Beverages",
+    "is_perishable": false,
+    "price": 36.0,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901052002461",
+    "name": "Tata Salt Vacuum Evaporated Iodized Salt 1kg (Special Edition 20% Extra)",
+    "brand": "Tata Salt",
+    "category": "Staples",
+    "is_perishable": false,
+    "price": 39.2,
+    "shelf_life_days": 730
+  },
+  {
+    "barcode": "8901058802471",
+    "name": "Maggi 2-Minute Special Masala Noodles 70g (1kg Economy Jar)",
+    "brand": "Nestle",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 16.0,
+    "shelf_life_days": 270
+  },
+  {
+    "barcode": "8904004402481",
+    "name": "Haldiram's Nagpur Aloo Bhujia 200g Pouch (Twin Pack)",
+    "brand": "Haldiram's",
+    "category": "Snacks & Instant",
+    "is_perishable": false,
+    "price": 104.4,
+    "shelf_life_days": 180
+  },
+  {
+    "barcode": "8901262002491",
+    "name": "Amul Taaza Homogenised Toned Milk 500ml (Twin Pack)",
+    "brand": "Amul",
+    "category": "Dairy & Breakfast",
+    "is_perishable": true,
+    "price": 22.4,
+    "shelf_life_days": 10
+  },
+  {
+    "barcode": "8901396002501",
+    "name": "Dettol Antiseptic Disinfectant Liquid 550ml (Family Pack)",
+    "brand": "Dettol (Reckitt)",
+    "category": "Personal Care & Home",
+    "is_perishable": false,
+    "price": 172.0,
+    "shelf_life_days": 1095
+  }
+]
