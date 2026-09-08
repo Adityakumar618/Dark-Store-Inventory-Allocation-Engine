@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark-Store Engine — Fulfillment Control Tower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/vendor/leaflet.css" />
+  <link rel="stylesheet" href="/static/style.css?v=5.0.0">
+  <script src="/static/vendor/chart.min.js"></script>
+</head>
+<body>
+
+  <!-- =============================================================================
+       TOP APPLICATION HEADER
+       ============================================================================= -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-badge-icon">⚡</div>
+      <div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="brand-title">Dark-Store Allocation Engine</span>
+          <span class="brand-tag">Mission Control</span>
+        </div>
+        <div style="font-size: 11px; color: var(--text-muted);">PostgreSQL 16 • PostGIS 3.4 • Concurrency & Outbox CDC Lab</div>
+      </div>
+    </div>
+
+    <div class="header-meta">
+      <div class="telemetry-pill">
+        <span class="pulse-emerald"></span>
+        <span id="header-cache-ratio">Buffer Cache Hit: 99.1%</span>
+      </div>
+      <div class="telemetry-pill">
+        <span style="color: var(--text-muted);">Active Workers:</span>
+        <strong id="header-active-backends" style="color: #ffffff; font-family: var(--font-mono);">1</strong>
+      </div>
+      <div class="telemetry-pill" style="display: none;" id="clock-pill">
+        <span id="live-clock" style="color: var(--text-muted); font-family: var(--font-mono); font-size: 11px;"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tab Bar -->
+  <nav class="nav-tabs-bar">
+    <button class="nav-tab-btn active" onclick="switchTab('concurrency')">
+      <span class="tab-icon">⚡</span> 4-Way Concurrency Lab
+      <span class="tab-badge">Bench</span>
+    </button>
+    <button class="nav-tab-btn" onclick="switchTab('spatial')">
+      <span class="tab-icon">🗺️</span> Spatial Routing & Dark Stores
+      <span class="tab-badge">24 Hubs</span>
+    </button>
+    <button class="nav-tab-btn" onclick="switchTab('safety-stock')">
+      <span class="tab-icon">📊</span> Dynamic Safety Stock ($ROP$)
+      <span class="tab-badge">Math</span>
+    </button>
+    <button class="nav-tab-btn" onclick="switchTab('internals')">
+      <span class="tab-icon">🔍</span> Engine Internals & CDC Outbox
+      <span class="tab-badge">Live</span>
+    </button>
+  </nav>
+
+  <!-- =============================================================================
+       MAIN CONTAINER
+       ============================================================================= -->
+  <main class="app-container">
+
+    <!-- Top Key Metrics Strip -->
+    <div class="metric-strip">
+      <div class="metric-card">
+        <div class="metric-card-label">Active Dark Stores <span>🏪</span></div>
+        <div class="metric-card-value" id="stat-stores">24</div>
+        <div class="metric-card-footer">Bangalore Fulfillment Grid</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card-label">FMCG Catalog SKUs <span>🏷️</span></div>
+        <div class="metric-card-value" id="stat-skus">250</div>
+        <div class="metric-card-footer">Universal EAN-13 Barcodes</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card-label">Allocated Orders <span>✓</span></div>
+        <div class="metric-card-value" style="color: var(--brand-emerald);" id="stat-allocated">--</div>
+        <div class="metric-card-footer">Zero Oversell Guaranteed</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card-label">2PC Split Fulfillments <span>🔀</span></div>
+        <div class="metric-card-value" style="color: var(--brand-indigo);" id="stat-splits">--</div>
+        <div class="metric-card-footer">Multi-Store Atomic 2PC</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card-label">Outbox CDC Events <span>📬</span></div>
+        <div class="metric-card-value" style="color: var(--brand-violet);" id="stat-outbox">--</div>
+        <div class="metric-card-footer">Zero Dual-Write Loss</div>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         TAB 1: 4-WAY CONCURRENCY LAB
+         ========================================================================= -->
+    <section id="tab-concurrency" class="view-section active">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-header-title">
+              <span>⚡ High-Contention Concurrency Benchmark Suite</span>
+              <span class="status-pill pill-optimal">4 Database Paradigms Active</span>
+            </div>
+            <div class="card-header-desc">
+              Simulates concurrent workers competing for <strong>5 limited physical units</strong>. Measures lock contention, throughput (RPS), transaction latencies, and abort behavior under pressure.
+            </div>
+          </div>
+        </div>
+
+        <!-- Control Bar with Segmented Worker Selector -->
+        <div class="benchmark-control-panel">
+          <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+            <span style="font-size: 13px; font-weight: 600; color: var(--text-main);">Worker Concurrency:</span>
+            <div class="segmented-selector">
+              <button class="segmented-btn" onclick="setBenchmarkWorkers(20, this)">20 Workers</button>
+              <button class="segmented-btn active" onclick="setBenchmarkWorkers(40, this)">40 Workers</button>
+              <button class="segmented-btn" onclick="setBenchmarkWorkers(60, this)">60 Workers</button>
+              <button class="segmented-btn" onclick="setBenchmarkWorkers(100, this)">100 Workers</button>
+            </div>
+            <input type="hidden" id="bench-worker-count" value="40">
+            <span style="font-size: 12px; color: var(--text-muted); font-family: var(--font-mono);">Target: Store #1 • SKU #1 (Amul Milk)</span>
+          </div>
+
+          <button class="btn-primary" id="btn-run-benchmark" onclick="execute4WayBenchmark()">
+            <span>⚡</span> Run 4-Engine Benchmark Suite
+          </button>
+        </div>
+
+        <!-- 4-Engine Comparison Grid -->
+        <div class="benchmark-grid" id="benchmark-results-grid">
+          <!-- Engine 1: Naive -->
+          <div class="engine-card">
+            <div>
+              <div class="engine-header">
+                <div>
+                  <div class="engine-name">1. Naive Baseline</div>
+                  <div class="engine-mechanism-tag">Un-locked Read-then-Write</div>
+                </div>
+                <span class="engine-badge badge-naive">Unsafe</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Allocated:</span>
+                <span class="engine-stat-value" id="bench-naive-alloc">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Aborted / Conflicts:</span>
+                <span class="engine-stat-value" id="bench-naive-reject">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Oversold Deficit:</span>
+                <span class="engine-stat-value" style="color: var(--brand-rose);" id="bench-naive-oversold">--</span>
+              </div>
+              
+              <!-- Metric bar -->
+              <div class="engine-metric-bar-container">
+                <div class="engine-metric-bar-label">
+                  <span>Throughput</span>
+                  <span id="bench-naive-rps">-- req/s</span>
+                </div>
+                <div class="engine-metric-bar">
+                  <div class="engine-metric-bar-fill" id="bar-naive-rps" style="width: 10%; background: var(--brand-rose);"></div>
+                </div>
+              </div>
+
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Avg Latency:</span>
+                <span class="engine-stat-value" id="bench-naive-lat">-- ms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engine 2: Pessimistic -->
+          <div class="engine-card highlight">
+            <div>
+              <div class="engine-header">
+                <div>
+                  <div class="engine-name">2. Pessimistic (FOR UPDATE)</div>
+                  <div class="engine-mechanism-tag">Deterministic Row Locks</div>
+                </div>
+                <span class="engine-badge badge-pessimistic">100% ACID</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Allocated:</span>
+                <span class="engine-stat-value" id="bench-pess-alloc">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Out-of-Stock Rejected:</span>
+                <span class="engine-stat-value" id="bench-pess-reject">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Oversold Deficit:</span>
+                <span class="engine-stat-value" style="color: var(--brand-emerald);" id="bench-pess-oversold">0 (Zero)</span>
+              </div>
+
+              <!-- Metric bar -->
+              <div class="engine-metric-bar-container">
+                <div class="engine-metric-bar-label">
+                  <span>Throughput</span>
+                  <span id="bench-pess-rps" style="color: var(--brand-emerald);">-- req/s</span>
+                </div>
+                <div class="engine-metric-bar">
+                  <div class="engine-metric-bar-fill" id="bar-pess-rps" style="width: 10%; background: var(--brand-emerald);"></div>
+                </div>
+              </div>
+
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Avg Latency:</span>
+                <span class="engine-stat-value" id="bench-pess-lat">-- ms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engine 3: Optimistic Concurrency Control (OCC) -->
+          <div class="engine-card">
+            <div>
+              <div class="engine-header">
+                <div>
+                  <div class="engine-name">3. Optimistic (OCC)</div>
+                  <div class="engine-mechanism-tag">Version Columns (Zero Lock)</div>
+                </div>
+                <span class="engine-badge badge-occ">Non-Blocking</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Allocated:</span>
+                <span class="engine-stat-value" id="bench-occ-alloc">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Version Conflicts:</span>
+                <span class="engine-stat-value" style="color: #a5b4fc;" id="bench-occ-reject">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Oversold Deficit:</span>
+                <span class="engine-stat-value" style="color: var(--brand-emerald);" id="bench-occ-oversold">0 (Zero)</span>
+              </div>
+
+              <!-- Metric bar -->
+              <div class="engine-metric-bar-container">
+                <div class="engine-metric-bar-label">
+                  <span>Throughput</span>
+                  <span id="bench-occ-rps">-- req/s</span>
+                </div>
+                <div class="engine-metric-bar">
+                  <div class="engine-metric-bar-fill" id="bar-occ-rps" style="width: 10%; background: var(--brand-indigo);"></div>
+                </div>
+              </div>
+
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Avg Latency:</span>
+                <span class="engine-stat-value" id="bench-occ-lat">-- ms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engine 4: Advisory Locks -->
+          <div class="engine-card">
+            <div>
+              <div class="engine-header">
+                <div>
+                  <div class="engine-name">4. Advisory Locks</div>
+                  <div class="engine-mechanism-tag">pg_advisory_xact_lock</div>
+                </div>
+                <span class="engine-badge badge-advisory">App Mutex</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Allocated:</span>
+                <span class="engine-stat-value" id="bench-adv-alloc">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Out-of-Stock Rejected:</span>
+                <span class="engine-stat-value" id="bench-adv-reject">--</span>
+              </div>
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Oversold Deficit:</span>
+                <span class="engine-stat-value" style="color: var(--brand-emerald);" id="bench-adv-oversold">0 (Zero)</span>
+              </div>
+
+              <!-- Metric bar -->
+              <div class="engine-metric-bar-container">
+                <div class="engine-metric-bar-label">
+                  <span>Throughput</span>
+                  <span id="bench-adv-rps">-- req/s</span>
+                </div>
+                <div class="engine-metric-bar">
+                  <div class="engine-metric-bar-fill" id="bar-adv-rps" style="width: 10%; background: var(--brand-violet);"></div>
+                </div>
+              </div>
+
+              <div class="engine-stat-row">
+                <span class="engine-stat-label">Avg Latency:</span>
+                <span class="engine-stat-value" id="bench-adv-lat">-- ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparative Chart & Architecture Insights -->
+          <div style="background: var(--bg-card-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span style="font-size: 13px; font-weight: 700; color: #ffffff;">📊 Comparative Engine Throughput & Contention Latency</span>
+              <span style="font-size: 11px; color: var(--brand-indigo); font-family: var(--font-mono);">Dual Visualizer (Bars + Canvas)</span>
+            </div>
+
+            <!-- Animated Bar Graph Matrix -->
+            <div id="visual-benchmark-bars" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; background: #070c16; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <!-- Naive -->
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 11px;">
+                <span style="color: #fda4af; font-weight: 600; width: 160px;">Naive (Un-locked):</span>
+                <div style="flex: 1; height: 12px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; margin: 0 10px;">
+                  <div id="vis-bar-naive" style="width: 15%; height: 100%; background: linear-gradient(90deg, #f43f5e, #fb7185); transition: width 0.8s ease;"></div>
+                </div>
+                <span id="vis-val-naive" style="font-family: var(--font-mono); font-weight: 700; color: #fda4af; width: 85px; text-align: right;">-- req/s</span>
+              </div>
+              <!-- Pessimistic -->
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 11px;">
+                <span style="color: #6ee7b7; font-weight: 600; width: 160px;">Pessimistic (FOR UPDATE):</span>
+                <div style="flex: 1; height: 12px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; margin: 0 10px;">
+                  <div id="vis-bar-pess" style="width: 85%; height: 100%; background: linear-gradient(90deg, #10b981, #34d399); transition: width 0.8s ease;"></div>
+                </div>
+                <span id="vis-val-pess" style="font-family: var(--font-mono); font-weight: 700; color: #6ee7b7; width: 85px; text-align: right;">-- req/s</span>
+              </div>
+              <!-- OCC -->
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 11px;">
+                <span style="color: #a5b4fc; font-weight: 600; width: 160px;">Optimistic (OCC):</span>
+                <div style="flex: 1; height: 12px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; margin: 0 10px;">
+                  <div id="vis-bar-occ" style="width: 50%; height: 100%; background: linear-gradient(90deg, #6366f1, #818cf8); transition: width 0.8s ease;"></div>
+                </div>
+                <span id="vis-val-occ" style="font-family: var(--font-mono); font-weight: 700; color: #a5b4fc; width: 85px; text-align: right;">-- req/s</span>
+              </div>
+              <!-- Advisory -->
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 11px;">
+                <span style="color: #c4b5fd; font-weight: 600; width: 160px;">Advisory Locks:</span>
+                <div style="flex: 1; height: 12px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; margin: 0 10px;">
+                  <div id="vis-bar-adv" style="width: 70%; height: 100%; background: linear-gradient(90deg, #8b5cf6, #a78bfa); transition: width 0.8s ease;"></div>
+                </div>
+                <span id="vis-val-adv" style="font-family: var(--font-mono); font-weight: 700; color: #c4b5fd; width: 85px; text-align: right;">-- req/s</span>
+              </div>
+            </div>
+
+            <div style="height: 180px; position: relative;">
+              <canvas id="concurrency-benchmark-chart"></canvas>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-card-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">💡 Production Engineering Analysis</div>
+              <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+                <strong>Pessimistic (<code style="color: #34d399;">FOR UPDATE</code>)</strong>: Optimal for high-demand flash sales; locks rows deterministically on disk pages with zero transaction retries.
+              </p>
+              <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+                <strong>OCC Versioning</strong>: Optimal for read-heavy catalogs with low write conflicts; avoids lock waits but cascades aborts on hot keys.
+              </p>
+              <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+                <strong>Advisory Locks</strong>: 64-bit application mutexes inside PostgreSQL memory; completely bypasses disk tuple write-locks.
+              </p>
+            </div>
+            <div style="margin-top: 14px; border-top: 1px solid var(--border-subtle); padding-top: 10px; font-size: 11px; color: var(--brand-emerald); font-weight: 600;">
+              ✓ 100% ACID Consistency Verified • Zero Phantom Inventory
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Terminal Stream -->
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-header-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span style="font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">PostgreSQL Execution Trace</span>
+            <button class="btn-secondary" style="padding: 3px 10px; font-size: 11px;" onclick="clearTerminal()">Clear</button>
+          </div>
+          <div class="terminal-stream" id="bench-terminal">
+            <div class="term-line"><span class="term-time">[SYS]</span> <span class="term-tag-info">Ready</span> Concurrency Lab initialized. Choose worker count and click Run Benchmark.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 2: SPATIAL ROUTING & DARK STORES
+         ========================================================================= -->
+    <section id="tab-spatial" class="view-section">
+      <div class="spatial-layout">
+        <!-- Leaflet Map -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-header-title">🗺️ Bangalore Dark-Store Spatial Network</div>
+              <div class="card-header-desc">PostGIS GiST indexing with 10-minute micro-fulfillment coverage across 24 retail locations.</div>
+            </div>
+          </div>
+          <div id="control-map"></div>
+        </div>
+
+        <!-- Dispatch Simulator -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-header-title">📦 Order Dispatch Simulator</div>
+              <div class="card-header-desc">PostGIS KNN routing to nearest dark store with FEFO batch decrement.</div>
+            </div>
+          </div>
+
+          <!-- Quick Fill Buttons -->
+          <div style="display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;">
+            <button type="button" class="quick-fill-btn" onclick="quickFillOrder(1, 1, 1)">⚡ Fast 1x Milk</button>
+            <button type="button" class="quick-fill-btn" onclick="quickFillOrder(1, 2, 2)">⚡ 2x Bread</button>
+            <button type="button" class="quick-fill-btn" onclick="quickFillOrder(1, 1, 10)">⚡ 10x Split Test</button>
+          </div>
+
+          <form onsubmit="simulateDispatch(event)" style="display: flex; flex-direction: column; gap: 14px;">
+            <div>
+              <label style="font-size: 12px; font-weight: 600; color: var(--text-muted);">Customer Drop Point:</label>
+              <select id="sim-customer-select" style="width: 100%; margin-top: 4px;">
+                <option value="1">Loading Customers...</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="font-size: 12px; font-weight: 600; color: var(--text-muted);">Target SKU:</label>
+              <select id="sim-sku-select" style="width: 100%; margin-top: 4px;">
+                <option value="1">Loading SKUs...</option>
+              </select>
+            </div>
+
+            <div style="display: flex; gap: 12px;">
+              <div style="flex: 1;">
+                <label style="font-size: 12px; font-weight: 600; color: var(--text-muted);">Quantity:</label>
+                <input type="number" id="sim-qty" value="1" min="1" max="50" style="width: 100%; margin-top: 4px;" required>
+              </div>
+              <div style="flex: 1;">
+                <label style="font-size: 12px; font-weight: 600; color: var(--text-muted);">Concurrency Strategy:</label>
+                <select id="sim-strategy" style="width: 100%; margin-top: 4px;">
+                  <option value="PESSIMISTIC">Pessimistic (FOR UPDATE)</option>
+                  <option value="OCC">Optimistic (OCC)</option>
+                  <option value="ADVISORY">Advisory Lock</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="checkbox" id="sim-split" checked>
+              <label for="sim-split" style="font-size: 12px; color: var(--text-muted); cursor: pointer;">Allow 2PC Multi-Store Split Fulfillment</label>
+            </div>
+
+            <button type="submit" class="btn-primary" style="justify-content: center; padding: 11px; margin-top: 6px;">
+              🚀 Execute Transactional Allocation
+            </button>
+          </form>
+
+          <div id="sim-dispatch-result" style="margin-top: 16px; display: none;"></div>
+        </div>
+      </div>
+
+      <!-- Real-Time Dark Store Inventory Table -->
+      <div class="card" style="margin-top: 24px;">
+        <div class="card-header">
+          <div>
+            <div class="card-header-title">🏪 Dark Store Stock Matrix & FEFO Expiry Batches</div>
+            <div class="card-header-desc">Inspect multi-batch expiration dates and safety stock levels for selected store.</div>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <input type="text" id="store-matrix-search" placeholder="Filter product name..." oninput="filterStoreMatrix()" style="padding: 7px 12px; font-size: 12px;">
+            <select id="store-matrix-select" onchange="loadStoreMatrix(event)">
+              <option value="1">Store #1 - Zepto Dark Store (Indiranagar)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name & Barcode</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Batch ID</th>
+                <th>Available</th>
+                <th>Reserved</th>
+                <th>Expiry Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="store-matrix-tbody">
+              <tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading store inventory...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 3: DYNAMIC SAFETY STOCK ($ROP$)
+         ========================================================================= -->
+    <section id="tab-safety-stock" class="view-section">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-header-title">📊 Dynamic Reorder Point ($ROP$) & Statistical Safety Stock Engine</div>
+            <div class="card-header-desc">Continuous statistical calculation using SQL window functions across FMCG catalog.</div>
+          </div>
+          <button class="btn-secondary" onclick="loadSafetyStockTable()">↻ Refresh Model</button>
+        </div>
+
+        <!-- Formula Banner -->
+        <div class="formula-callout">
+          <div>
+            <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-muted); letter-spacing: 0.5px;">Mathematical Formulation</div>
+            <div class="formula-text">ROP = (d̄ × L) + (1.65 × σ_d × √L)</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Lead Time (L) = 2 Days • 95% Service Level Factor (Z) = 1.65 • Continuous Rolling STDDEV</div>
+          </div>
+          <div>
+            <input type="text" id="safety-search-input" placeholder="Search SKU name or barcode..." oninput="filterSafetyStockTable()" style="padding: 8px 14px; font-size: 12px; width: 240px;">
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>SKU Name & Barcode</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Total Stock</th>
+                <th>Daily Velocity (d̄)</th>
+                <th>Lead Time (L)</th>
+                <th>Safety Stock (SS)</th>
+                <th>Reorder Point (ROP)</th>
+                <th>Health Status</th>
+              </tr>
+            </thead>
+            <tbody id="safety-stock-tbody">
+              <tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 24px;">Calculating dynamic ROP matrix...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 4: ENGINE INTERNALS & OUTBOX STREAM
+         ========================================================================= -->
+    <section id="tab-internals" class="view-section">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <!-- PostgreSQL System Diagnostics -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-title">🔍 PostgreSQL Database Engine Observability</div>
+            <button class="btn-secondary" onclick="refreshEngineTelemetry()">↻ Poll Diagnostics</button>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="engine-stat-row">
+              <span class="engine-stat-label">Buffer Cache Hit Ratio:</span>
+              <span class="engine-stat-value" id="diag-cache" style="color: var(--brand-emerald); font-size: 14px;">--</span>
+            </div>
+            <div class="engine-stat-row">
+              <span class="engine-stat-label">Active Backend Workers:</span>
+              <span class="engine-stat-value" id="diag-backends">--</span>
+            </div>
+            <div class="engine-stat-row">
+              <span class="engine-stat-label">Transactions Committed:</span>
+              <span class="engine-stat-value" id="diag-commits">--</span>
+            </div>
+            <div class="engine-stat-row">
+              <span class="engine-stat-label">Transactions Rolled Back:</span>
+              <span class="engine-stat-value" id="diag-rollbacks">--</span>
+            </div>
+            <div class="engine-stat-row">
+              <span class="engine-stat-label">Detected Deadlocks:</span>
+              <span class="engine-stat-value" id="diag-deadlocks" style="color: var(--brand-emerald);">0</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <div style="font-size: 12px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">Active Locks by Type (<code>pg_locks</code>)</div>
+            <div class="table-wrapper" style="max-height: 200px;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Lock Type</th>
+                    <th>Mode</th>
+                    <th>Granted</th>
+                    <th>Count</th>
+                  </tr>
+                </thead>
+                <tbody id="diag-locks-tbody">
+                  <tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 16px;">Polling pg_locks...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transactional Outbox (CDC Event Stream) -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-header-title">📬 Transactional Outbox Event Stream (CDC)</div>
+              <div class="card-header-desc">Atomic Dual-Write Guarantee: Events committed within same transaction as inventory decrements.</div>
+            </div>
+            <button class="btn-secondary" onclick="loadOutboxEvents()">↻ Poll CDC</button>
+          </div>
+
+          <div class="table-wrapper" style="max-height: 420px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Event ID</th>
+                  <th>Event Type</th>
+                  <th>Order ID</th>
+                  <th>Strategy</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="outbox-tbody">
+                <tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 16px;">Loading Outbox CDC feed...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live EXPLAIN ANALYZE Query Plan Inspector -->
+      <div class="card" style="margin-top: 24px;">
+        <div class="card-header">
+          <div>
+            <div class="card-header-title">⚡ PostGIS GiST Index Execution Plan Inspector (<code>EXPLAIN ANALYZE</code>)</div>
+            <div class="card-header-desc">Real-time PostgreSQL execution engine comparison: GiST Spatial Index KNN Search vs Sequential Table Scan.</div>
+          </div>
+          <button class="btn-primary" onclick="runExplainAnalyzeComparison()">
+            <span>🔍</span> Inspect Live Query Plan
+          </button>
+        </div>
+
+        <div id="explain-plan-display" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; background: #070c16; padding: 10px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 12px;">
+            <span style="font-size: 12px; color: var(--text-muted); font-family: var(--font-mono);" id="explain-query-text">Query: SELECT ... FROM stores ORDER BY location &lt;-&gt; customer_point LIMIT 3;</span>
+            <span class="status-pill pill-optimal" id="explain-speedup-badge">172.5x Cost Reduction (GiST Index)</span>
+          </div>
+
+          <div style="background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 14px; font-size: 12px; color: #cbd5e1; line-height: 1.5;">
+            <strong style="color: #a5b4fc;">💡 Production Architecture Insight:</strong>
+            <span id="explain-scale-explanation">On N=24 stores, both scans execute in &lt;0.1ms inside CPU L1 cache. The PostgreSQL Cost Optimizer calculates GiST R-Tree Index at <strong>startup cost=0.14</strong> vs Sequential Scan at <strong>startup cost=24.15 (172x cost reduction)</strong>. At production scale (10,000+ dark store geofences), Sequential Scan degrades to <em>O(N log N)</em> with full-table heap sorting, whereas GiST maintains sub-millisecond <em>O(log N)</em> KNN spatial lookups.</span>
+          </div>
+
+          <div class="plan-comparison-grid">
+            <div class="plan-card" style="border-color: rgba(16, 185, 129, 0.4);">
+              <div class="plan-header">
+                <span style="color: var(--brand-emerald);" id="gist-header-label">✓ GiST Spatial Index Scan (Startup Cost: 0.14)</span>
+                <span style="font-family: var(--font-mono); font-size: 12px; color: #ffffff;" id="gist-exec-time">-- ms</span>
+              </div>
+              <div class="plan-code" id="gist-plan-json">Click "Inspect Live Query Plan" to run...</div>
+            </div>
+
+            <div class="plan-card" style="border-color: rgba(244, 63, 94, 0.4);">
+              <div class="plan-header">
+                <span style="color: var(--brand-rose);" id="seq-header-label">✗ Sequential Scan + Top-N Heapsort (Startup Cost: 24.15)</span>
+                <span style="font-family: var(--font-mono); font-size: 12px; color: #ffffff;" id="seq-exec-time">-- ms</span>
+              </div>
+              <div class="plan-code" id="seq-plan-json">Click "Inspect Live Query Plan" to run...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal for Inspecting Outbox CDC JSON Payload -->
+  <div class="modal-overlay" id="outbox-modal" onclick="closeOutboxModal(event)">
+    <div class="modal-dialog" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 16px;">📬</span>
+          <strong style="color: #ffffff; font-size: 14px;" id="modal-event-title">Outbox CDC Event Details</strong>
+        </div>
+        <button class="btn-secondary" style="padding: 4px 10px;" onclick="closeOutboxModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-json-content">
+        // Event payload loading...
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="copyModalJson()">📋 Copy JSON Payload</button>
+        <button class="btn-primary" onclick="closeOutboxModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/vendor/leaflet.js"></script>
+  <script src="/static/app.js?v=5.0.0"></script>
+</body>
+</html>
